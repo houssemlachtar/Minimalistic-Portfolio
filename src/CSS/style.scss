@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: #ffffff;
+    background-image: url("../../static/Pattern.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header,
+.github_link {
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    z-index: 10;
+}
+
+$color: #0d4690;
+$hover: #ffffff;
+header {
+    background-color: #ffffffa2;
+    backdrop-filter: blur(2px);
+    border: 1px solid white;
+    width: 100%;
+    padding: 6px 20px;
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+            #nav_item_1 {
+                margin-right: auto;
+                a {
+                    font-weight: 700;
+                    padding: 6px 12px;
+                    font-size: 18px;
+                    font-family: "Roboto Slab", serif;
+                }
+            }
+            #nav_item_4 {
+                a {
+                    background-color: transparent;
+                    padding: 4px;
+                    display: grid;
+                    place-items: center;
+                    transition: 0.1s ease;
+                    border-radius: 50%;
+                    background-color: rgba(255, 255, 255, 0.678);
+                    border: 1px solid rgb(255, 255, 255);
+                    max-width: 37.66;
+                    max-height: 37.66;
+                    &::after {
+                        display: none;
+                        opacity: 0;
+                    }
+                    &:hover {
+                        background-color: $color;
+                        svg {
+                            path {
+                                fill: white;
+                            }
+                        }
+                    }
+                    svg {
+                        height: 100%;
+                        max-height: 35px;
+                        display: block;
+                        width: fit-content;
+                        path {
+                            fill: $color;
+                            transition: 0.1s ease;
+                        }
+                    }
+                }
+            }
+            a {
+                font-size: 17px;
+                font-weight: 600;
+                color: $color;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                height: fit-content;
+                position: relative;
+                padding: 5px 12px;
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 4px;
+                gap: 5px;
+                overflow: hidden;
+                border: 1px solid white;
+                white-space: nowrap;
+                box-shadow: 0 0px 0.9px rgba(0, 0, 0, 0.008), 0 0px 2.1px rgba(0, 0, 0, 0.012), 0 0px 4px rgba(0, 0, 0, 0.015), 0 0px 7.1px rgba(0, 0, 0, 0.018), 0 0px 13.4px rgba(0, 0, 0, 0.022), 0 0px 32px rgba(0, 0, 0, 0.03);
+                svg {
+                    height: 20px;
+                    &:hover {
+                        path {
+                            fill: $hover;
+                        }
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0%;
+                    left: 0;
+                    height: 0%;
+                    background-color: $color;
+                    width: 100%;
+                    transition: 0.3s ease;
+                    border-radius: 4px;
+                }
+                transition: 0.3s ease;
+                &:hover {
+                    color: $hover;
+                    background-color: transparent;
+                    &::after {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#nav_item_2,
+#nav_item_3 {
+    display: none;
+}
+
+.github_link {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    border: none;
+    a {
+        font-size: 15px;
+        font-weight: 600;
+        color: #426592;
+        text-decoration: none;
+        padding: 3px 14px;
+        background-color: rgba(255, 255, 255, 0.336);
+        backdrop-filter: blur(5px);
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid white;
+        backdrop-filter: blur(1px);
+        box-shadow: 0 0px 0.9px rgba(0, 0, 0, 0.008), 0 0px 2.1px rgba(0, 0, 0, 0.012), 0 0px 4px rgba(0, 0, 0, 0.015), 0 0px 7.1px rgba(0, 0, 0, 0.018), 0 0px 13.4px rgba(0, 0, 0, 0.022), 0 0px 32px rgba(0, 0, 0, 0.03), inset 0 0px 0.9px rgba(0, 0, 0, 0.008), inset 0 0px 2.1px rgba(255, 255, 255, 0.012), inset 0 0px 4px rgba(255, 255, 255, 0.015), inset 0 0px 7.1px rgba(255, 255, 255, 0.018), inset 0 0px 13.4px rgba(255, 255, 255, 0.022), inset 0 0px 32px rgba(255, 255, 255, 0.03);
+        &:hover {
+            color: $color;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        padding: 10px 40px;
+    }
+    #nav_item_2,
+    #nav_item_3 {
+        display: block;
+    }
+    #nav_item_3 {
+        svg {
+            height: 18px;
+        }
+    }
+    .github_link {
+        bottom: 30px;
+        right: 40px;
+    }
+}
