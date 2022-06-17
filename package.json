@@ -27,18 +27,13 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
   },
-  "name": "threejs-portfolio-website",
+  "name": "Minimalistic Portfolio",
   "version": "1.0.0",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Devang47/ThreeJS-Portfolio-template.git"
+    "url": "git+https://github.com/houssemlachtar/Minimalistic-Portfolio.git"
   },
-  "author": "devang saklani",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Devang47/ThreeJS-Portfolio-template/issues"
-  },
-  "homepage": "https://github.com/Devang47/ThreeJS-Portfolio-template#readme",
+  "homepage": "https://github.com/houssemlachtar/Minimalistic-Portfolio/",
   "description": ""
 }
