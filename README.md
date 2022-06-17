@@ -4,7 +4,7 @@ A minimalistic portfolio created with Three JS. You can download my resume from 
 <br>
 <br>        
 <a href="https://minimalistic-portfolio-houssemlachtar.vercel.app">
-        <img alt="Thumbnail" src="#" />
+        <img alt="Thumbnail" src="./src/Minimalistic-Portfolio.com.jpg" />
     </a>
 <br>
 <a href="https://minimalistic-portfolio-houssemlachtar.vercel.app">
