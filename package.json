@@ -27,7 +27,7 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
   },
-  "name": "Minimalistic Portfolio",
+  "name": "Minimalistic-Portfolio",
   "version": "1.0.0",
   "devDependencies": {},
   "repository": {
