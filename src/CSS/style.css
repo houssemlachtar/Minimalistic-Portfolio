@@ -47,7 +47,7 @@ header nav ul {
     -ms-flex-align: center;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 11px;
 }
 
 header nav ul #nav_item_1 {
@@ -169,8 +169,8 @@ header nav ul a:hover::after {
     height: 100%;
 }
 
-#nav_item_2,
-#nav_item_3 {
+#mobile,
+#nav_item_4 {
     display: none;
 }
 
@@ -208,8 +208,8 @@ header nav ul a:hover::after {
     header {
         padding: 10px 40px;
     }
-    #nav_item_2,
-    #nav_item_3 {
+    #mobile,
+    #nav_item_4 {
         display: block;
     }
     #nav_item_3 svg {
@@ -218,6 +218,9 @@ header nav ul a:hover::after {
     .github_link {
         bottom: 30px;
         right: 40px;
+    }
+    .custom-cursor{
+    display:none;
     }
 }
 
