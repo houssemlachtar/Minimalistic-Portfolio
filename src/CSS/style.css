@@ -8,7 +8,7 @@
 }
         :root {
             --color: 0, 0, 0;
-            --cursor-size: 30px;
+            --cursor-size: 20px;
         }
  
         * {
